@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build on AWS CodeBuild') {
             steps {
-                awsCodeBuild credentialsType: 'keys', projectName: 'github-project', region: 'ap-south-1', sourceControlType: 'project'
+                awsCodeBuild credentialsType: 'keys', projectName: 'GitHub-Project', region: 'ap-south-1', sourceControlType: 'project'
             }
         }
         stage('Stage after') {
